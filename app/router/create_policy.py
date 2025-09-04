@@ -8,7 +8,7 @@ router = APIRouter()
 def create_policy(request: PolicyDetails):
     try:
         result = create_excel.calculate_policy_projection(
-            input_modal_premium=request.modelPremium,
+            input_modal_premium=request.modalPremium,
             input_sum_assured=request.sumAssured,
             input_PT=request.pt,
             input_PPT=request.ppt

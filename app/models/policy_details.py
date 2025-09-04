@@ -19,7 +19,7 @@ class PolicyDetails(BaseModel):
     dob: str
     gender: Gender = Gender.M
     sumAssured: int
-    modelPremium: int
+    modalPremium: int
     premiumFrequency: PremiumFrequency = PremiumFrequency.YEARLY
     pt: int
     ppt: int
