@@ -15,10 +15,10 @@ class PremiumFrequency(IntEnum):
 
 
 class PolicyDetails(BaseModel):
-    date_of_birth: str
+    dob: str
     gender: Gender = Gender.M
-    sum_assured: int
-    model_premium: int
-    premium_frequency: PremiumFrequency = PremiumFrequency.YEARLY
-    policy_term: int
-    premium_policy_term: int
+    sumAssured: int
+    modelPremium: int
+    premiumFrequency: PremiumFrequency = PremiumFrequency.YEARLY
+    pt: int
+    ppt: int
