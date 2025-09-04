@@ -1,4 +1,5 @@
 from enum import IntEnum
+from typing import List, Optional
 from pydantic import BaseModel
 
 
@@ -22,3 +23,16 @@ class PolicyDetails(BaseModel):
     premiumFrequency: PremiumFrequency = PremiumFrequency.YEARLY
     pt: int
     ppt: int
+
+class YearlyProjection(BaseModel):
+    year: int
+    premium: int
+    sumAssured: int
+    bonusRate: float
+    bonusAmount: float
+    totalBenefit: float
+    netCashflow: float
+
+class PolicyProjectionResponse(BaseModel):
+    projection: List[YearlyProjection]
+    irr: Optional[float]

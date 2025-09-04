@@ -46,11 +46,11 @@ def calculate_policy_projection(
         yearly_data.append({
             "year": year + 1,
             "premium": premium[year],
-            "sum_assured": sum_assured[year],
-            "bonus_rate": bonus_rate[year],
-            "bonus_amount": bonus_amount[year],
-            "total_benefit": total_benefit[year],
-            "net_cashflow": net_cashflows[year],
+            "sumAssured": sum_assured[year],
+            "bonusRate": bonus_rate[year],
+            "bonusAmount": bonus_amount[year],
+            "totalBenefit": total_benefit[year],
+            "netCashflow": net_cashflows[year],
         })
 
     return {
